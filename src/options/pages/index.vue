@@ -4,6 +4,14 @@
 	<div class="text-center m-4">
 		<h1 class="text-3xl font-bold underline pb-6">Hello world from Options!</h1>
 
+		<v-card title="Card title"
+				subtitle="Subtitle"
+				text="lorem iandion a wdina widnoaiwdn aind ian diand inaiow dnoain doaindai dn">
+			<v-card-actions>
+				<v-btn>Click me</v-btn>
+			</v-card-actions>
+		</v-card>
+
 		<RouterLink to="/about">About</RouterLink>
 	</div>
 </template>

@@ -5,6 +5,16 @@ import '../assets/base.scss'
 import App from './app.vue'
 import './index.scss'
 
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+
+const vuetify = createVuetify({
+  components,
+  directives,
+})
+
 routes.push({
   path: '/',
   redirect: '/options',
@@ -23,4 +33,4 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(vuetify).use(router).mount('#app')

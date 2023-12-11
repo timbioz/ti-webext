@@ -1,5 +1,6 @@
 import { crx } from '@crxjs/vite-plugin'
 import vue from '@vitejs/plugin-vue'
+import vuetify from 'vite-plugin-vuetify'
 import { dirname, relative } from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 import IconsResolver from 'unplugin-icons/resolver'
@@ -23,6 +24,7 @@ export default defineConfig({
     crx({ manifest }),
 
     vue(),
+    vuetify({ autoImport: true }),
 
     Pages({
       dirs: [
